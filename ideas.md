@@ -5,7 +5,6 @@
 - Collatz Conjecture
 - Random password generator
 - Random Number Guessing game ("Guess a number:", "Too high!", "Too low!", "You win!")
-- Password Generator
 - Prime Number checker
 - Fibonacci Sequence
 - Tic Tac Toe
