@@ -7,3 +7,7 @@ I recommend reading [the guide](./python-guide) (available in english, german an
 ## Contributing
 
 Contributions to this repository are welcome. Open a PR or contact me at <https://alex7k.com>.
+
+## Motivation
+
+I made this to assist me in training trial apprentices at my company
