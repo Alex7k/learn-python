@@ -1,7 +1,7 @@
 import random
 
 length = 16
-symbols = list("""1234567890°+"*ç%&/()=?`§`üäö$è!£àé-.,_:;<>\\}{][~´¦@#°¬|¢qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM""") # characters typable with Swissgerman keyboard layout
+symbols = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=!@#$%^&*()_+,./")
 
 password = ""
 for i in range(length):
