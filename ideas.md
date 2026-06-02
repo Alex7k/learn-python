@@ -63,11 +63,12 @@ Use the [python guide](https://github.com/Alex7k/learn-python/tree/main/python-g
 ## Level 4
 
 - [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) encoder
+  - Set an alphabet list: `alphabet = list("abcdefghijklmnopqrstuvwxyz")`
   - Provide a starting word
   - Provide a number
   - Rule of Caesar Cipher: All letters in the word are "shifted" in the alphabet based on the number. `abc` with number `1` becomes `bcd`.
   - Extra: Make sure if you shift e.g. `z` by `2`, it wraps back to the start and returns `b`.
-    - <details><summary>Hint</summary>Use the modulo operator <code>%</code></details>
+    - <details><summary>Hint</summary>Use the modulo operator <code>%</code> with the alphabet length <code>len(alphabet)</code></details>
 
 - [Anagram](https://en.wikipedia.org/wiki/Anagram) Finder
   - Make a wordlist with a bunch of words (E.g.: "listen", "silent", "dormitory", "dirty room", "debit card", "bad credit")
