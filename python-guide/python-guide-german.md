@@ -3,8 +3,6 @@
 - Eine Zeile nach der anderen wird ausgeführt.
 - Kommentare werden mit einem `#` am Anfang der Zeile geschrieben. (Werden von Python ignoriert)
 
----
-
 ## Datentypen
 
 Es gibt verschiedene Datentypen in Python:
@@ -36,8 +34,6 @@ Es gibt verschiedene Datentypen in Python:
     False
     ```
 
----
-
 ## Variablen umwandeln
 
 Beispiele:
@@ -50,8 +46,6 @@ float(x) # Umwandeln in Float (Kommazahl)
 alter = "17" # String (Text)
 alter_zahl = int(alter) # Umwandeln in Integer (Ganzzahl)
 ```
-
----
 
 ## Variablen zuweisen
 
@@ -86,8 +80,6 @@ Modulo-Operator gibt den Rest einer Division zurück:
 23 % 2 # Gibt 1 zurück. 23 / 2 ergibt 11 mit Rest 1.
 ```
 
----
-
 ## Konsole aus-/eingabe
 
 ```python
@@ -103,13 +95,19 @@ name = input() # Der User muss in die Konsole etwas eingeben, was dann in der Va
 name = input("Wie heisst du?: ")
 ```
 
----
-
 ## if-else (Bedingungen)
 
-*Es schaut zuerst die Bedingung von `if` an, wenn die Bedingung wahr ist, wird der Codeblock darunter ausgeführt, wenn nicht, wird die nächste `elif` Bedingung geprüft, und wenn keine der Bedingungen wahr ist, wird der `else` Block ausgeführt.*
+Mit `if`, `elif` und `else` kann Python Entscheidungen treffen.
+Python liest die Bedingungen von oben nach unten und führt nur den ersten passenden Block aus.
 
-Man muss immer Tab drücken, um einzurücken.
+Ein Block sind die eingerückten Zeilen unter einer Bedingung. Man muss also Tab drücken, um Python zu zeigen: "Dieser Code gehört zu dieser Bedingung."
+
+`if` = "Wenn diese Bedingung stimmt, mache das hier."<br>
+`elif` (optional) = "Sonst, wenn diese andere Bedingung stimmt, mache das hier."<br>
+`else` (optional) = "Sonst, wenn keine Bedingung davor gestimmt hat, mache das hier."<br>
+
+> [!NOTE]
+> Alles, was nach einem `#` kommt, wird von Python ignoriert. Das ist nur eine Notiz für Menschen und muss nicht abgeschrieben werden.
 
 ```python
 if a < b: # Wenn a kleiner als b ist
@@ -119,8 +117,6 @@ elif a == b: # Wenn a gleich b ist
 else: # Wenn keine der vorherigen Bedingungen zutrifft
     print("a ist grösser als b")
 ```
-
----
 
 ## Schleifen
 
@@ -150,8 +146,6 @@ while a < b: # Solange a kleiner als b ist
 
 Um eine Endlosschleife zu machen, kann man `while True:` schreiben.
 
----
-
 ## Input von dem User bekommen
 
 ```python
@@ -162,8 +156,6 @@ name = input("Bitte geben Sie Ihren Namen ein:")
 # Wichtig: input() gibt immer einen String zurück! Wenn du eine Zahl (Integer) davon kriegen willst, machst du z.B.:
 zahl = int(input("Gib eine Zahl ein: "))
 ```
-
----
 
 ## String Interpolation (Variablen in Strings/Text einfügen)
 
@@ -181,8 +173,6 @@ age = 17
 print("Ich bin " + str(age) + " Jahre alt.")
 print(f"Ich bin {age} Jahre alt.") # das 'f' am Anfang muss man hinzufügen, um Variablen mit {} einfügen zu können
 ```
-
----
 
 ## Arrays
 
@@ -221,8 +211,6 @@ fruits = ["Apfel", "Banane", "Kirsche"]
 anzahl_fruits = len(fruits) # Gibt die Anzahl der Einträge im Array 'fruits' zurück (3 in diesem Fall)
 ```
 
----
-
 ## Module
 
 Module kann man importieren, um zusätzliche Funktionen zu nutzen.
@@ -238,15 +226,13 @@ zufall_frucht = random.choice(fruits) # Gibt eine zufällige Frucht aus dem Arra
 print(zufall_frucht) # "Kirsche" oder "Banane" oder "Apfel"
 ```
 
----
-
 ## Funktionen
 
 Man kann eigene Funktionen erstellen, um wiederholende Logik zu kapseln und den Code übersichtlicher zu machen.
 
 ```python
 def begruessung(name): # Funktion mit einem Parameter 'name'
-    print(f"Hallo {name}, willkommen!") # Gibt eine Begrüßung aus
+    print(f"Hallo {name}, willkommen!") # Gibt eine Begrüssung aus
 
 name = input("Wie heisst du?: ")
 begruessung(name) # Ruft die Funktion 'begruessung' mit dem Parameter 'name' auf
@@ -259,8 +245,6 @@ b = 10
 resultat = summe(a, b) # a füllt den Parameter 'zahl_eins' und b füllt den Parameter 'zahl_zwei'
 print(f"Die Summe von {a} und {b} ist {resultat}.") # Gibt die Summe von a und b aus
 ```
-
----
 
 ## Meine Beispiellösungen zu manchen der schwierigen Aufgaben
 

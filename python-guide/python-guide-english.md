@@ -3,8 +3,6 @@
 - One line is executed after the other.
 - Comments are written with a `#` at the beginning of the line. (They are ignored by Python)
 
----
-
 ## Data Types
 
 There are different data types in Python:
@@ -36,8 +34,6 @@ There are different data types in Python:
     False
     ```
 
----
-
 ## Converting Variables
 
 Examples:
@@ -50,8 +46,6 @@ float(x) # Convert to float (decimal number)
 age = "17" # String (text)
 age_number = int(age) # Convert to integer (whole number)
 ```
-
----
 
 ## Assigning Variables
 
@@ -86,8 +80,6 @@ Modulo operator returns the remainder of a division:
 23 % 2 # Returns 1. 23 / 2 is 11 with remainder 1.
 ```
 
----
-
 ## Console Output/Input
 
 ```python
@@ -103,13 +95,19 @@ name = input() # The user must enter something in the console, which is then sto
 name = input("What is your name?: ")
 ```
 
----
-
 ## if-else (Conditions)
 
-It first checks the condition of `if`. If the condition is true, the code block below is executed. If not, the next `elif` condition is checked, and if none of the conditions are true, the `else` block is executed.
+With `if`, `elif`, and `else`, Python can make decisions.
+Python reads the conditions from top to bottom and only runs the first matching block.
 
-You must always press Tab to indent.
+A block is the indented lines below a condition. So you press Tab to show Python: "This code belongs to this condition."
+
+`if` = "If this condition is true, do this."<br>
+`elif` (optional) = "Otherwise, if this other condition is true, do this."<br>
+`else` (optional) = "Otherwise, if none of the conditions above were true, do this."<br>
+
+> [!NOTE]
+> Everything after a `#` is ignored by Python. It is only a note for humans and does not need to be copied.
 
 ```python
 if a < b: # If a is less than b
@@ -119,8 +117,6 @@ elif a == b: # If a is equal to b
 else: # If none of the previous conditions apply
     print("a is greater than b")
 ```
-
----
 
 ## Loops
 
@@ -150,8 +146,6 @@ while a < b: # As long as a is less than b
 
 To make an infinite loop, you can write `while True:`.
 
----
-
 ## Getting Input from the User
 
 ```python
@@ -162,8 +156,6 @@ name = input("Please enter your name:")
 # Important: input() always returns a string! If you want to get a number (integer), do e.g.:
 number = int(input("Enter a number: "))
 ```
-
----
 
 ## String Interpolation (Insert variables into strings/text)
 
@@ -181,8 +173,6 @@ age = 17
 print("I am " + str(age) + " years old.")
 print(f"I am {age} years old.") # You must add 'f' at the beginning to insert variables with {}
 ```
-
----
 
 ## Arrays
 
@@ -221,8 +211,6 @@ fruits = ["Apple", "Banana", "Cherry"]
 number_of_fruits = len(fruits) # Returns the number of entries in the array 'fruits' (3 in this case)
 ```
 
----
-
 ## Modules
 
 You can import modules to use additional functions.
@@ -237,8 +225,6 @@ fruits = ["Apple", "Banana", "Cherry"]
 random_fruit = random.choice(fruits) # Returns a random fruit from the array 'fruits'
 print(random_fruit) # "Cherry" or "Banana" or "Apple"
 ```
-
----
 
 ## Functions
 
@@ -259,8 +245,6 @@ b = 10
 result = sum_numbers(a, b) # a fills the parameter 'number_one' and b fills the parameter 'number_two'
 print(f"The sum of {a} and {b} is {result}.") # Prints the sum of a and b
 ```
-
----
 
 ## My example solutions to some of the more difficult tasks
 
