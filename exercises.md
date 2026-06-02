@@ -84,7 +84,7 @@ Use the [python guide](./python-guide) to learn about concepts used in these exe
     Let's say the word is banana: `______` -> user guesses `a` -> `_a_a_a` and so on.
   - The user wins if all letters have been revealed.
     - <details><summary>Hint</summary>Check if there are no `_`s (empty fields) left</details>
-  - Extra: Only give the user 5 "hearts" and make him lose if he has no hearts left
+  - Extra: Give the user 5 "hearts" and make him lose if he has no hearts left
 
 - [Tic Tac Toe](https://en.wikipedia.org/wiki/Tic-tac-toe)
   - Create a playing board (array with 9 slots)
