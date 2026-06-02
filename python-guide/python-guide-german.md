@@ -1,7 +1,9 @@
 # Lernhilfe Python
 
-- Eine Zeile nach der anderen wird ausgeführt.
-- Kommentare werden mit einem `#` am Anfang der Zeile geschrieben. (Werden von Python ignoriert)
+## Allgemeine Infos
+
+- Codezeilen werden von oben nach unten ausgeführt.
+- Alles, was nach `#` kommt, wird von Python ignoriert. Damit kann man Kommentare für Menschen schreiben.
 
 ## Datentypen
 
@@ -35,6 +37,9 @@ Es gibt verschiedene Datentypen in Python:
     ```
 
 ## Variablen umwandeln
+
+> [!NOTE]
+> Alles, was nach einem `#` kommt, wird von Python ignoriert. Das ist nur eine Notiz für Menschen.
 
 Beispiele:
 
@@ -120,42 +125,104 @@ else: # Wenn keine der vorherigen Bedingungen zutrifft
 
 ## Schleifen
 
-Es gibt 2 Arten von Schleifen: `for` und `while`
+Schleifen braucht man, wenn Python etwas mehrmals machen soll.
+Es gibt 2 wichtige Arten von Schleifen: `for` und `while`.
 
 ### for-Schleife
 
-Wird für eine bestimmte Anzahl von Iterationen verwendet:
+Eine `for`-Schleife geht eine Sammlung Schritt für Schritt durch.
+Bei jedem Durchlauf nimmt Python den nächsten Wert aus der Liste und speichert ihn kurz in einer Variable.
 
 ```python
-fruits = ["Apfel", "Banane", "Kirsche"]
-for fruit in fruits: # 'fruit' ist die temporäre Variable, die für jedes Element im Array 'fruits' verwendet wird
-    print(fruit) # gibt jeden Wert des Arrays aus (Apfel, Banane, Kirsche)
+fruits = ["Apfel", "Banane", "Kirsche", "Zitrone"]
+for fruit in fruits: # fruit ist immer die aktuelle Frucht
+    print(fruit) # gibt die aktuelle Frucht aus
+```
+
+Python macht hier ungefähr das:
+
+1. `fruit` ist `"Apfel"`, dann wird `"Apfel"` ausgegeben.
+2. `fruit` ist `"Banane"`, dann wird `"Banane"` ausgegeben.
+3. `fruit` ist `"Kirsche"`, dann wird `"Kirsche"` ausgegeben.
+4. `fruit` ist `"Zitrone"`, dann wird `"Zitrone"` ausgegeben.
+
+Output:
+
+```txt
+Apfel
+Banane
+Kirsche
+Zitrone
+```
+
+Der Name `fruit` ist frei wählbar. Wichtig ist nur, dass du denselben Namen im eingerückten Block wieder benutzt.
+
+Wenn du etwas eine bestimmte Anzahl mal machen willst, kannst du `range()` benutzen:
+
+```python
+for i in range(1, 10):
+    print("Durchlauf Nummer " + str(i))
+```
+
+`range(1, 10)` bedeutet: Starte bei 1 und höre vor 10 auf.
+Die 10 ist also nicht mehr dabei.
+
+Output:
+
+```txt
+Durchlauf Nummer 1
+Durchlauf Nummer 2
+Durchlauf Nummer 3
+Durchlauf Nummer 4
+Durchlauf Nummer 5
+Durchlauf Nummer 6
+Durchlauf Nummer 7
+Durchlauf Nummer 8
+Durchlauf Nummer 9
 ```
 
 ### while-Schleife
 
-Wird verwendet, solange eine Bedingung wahr ist:
+Eine `while`-Schleife läuft, solange eine Bedingung stimmt.
+Python prüft die Bedingung vor jedem Durchlauf neu.
 
 ```python
 a = 0
 b = 5
 while a < b: # Solange a kleiner als b ist
-    print("a ist kleiner als b")
-    a = a + 1 # Erhöht a um 1, damit die Schleife irgendwann endet, sonst wäre es eine Endlosschleife
+    print(a)
+    a = a + 1 # a wird grösser, damit die Schleife irgendwann endet
 ```
 
-Um eine Endlosschleife zu machen, kann man `while True:` schreiben.
+Output:
+
+```txt
+0
+1
+2
+3
+4
+```
+
+Wenn `a` den Wert `5` erreicht, stimmt `a < b` nicht mehr. Dann stoppt die Schleife.
+
+Um absichtlich eine Endlosschleife zu machen, kann man `while True:` schreiben.
 
 ## Input von dem User bekommen
 
 ```python
 print("Bitte geben Sie Ihren Namen ein:")
 name = input()
-# MACH DAS GLEICHE WIE:
-name = input("Bitte geben Sie Ihren Namen ein:")
-# Wichtig: input() gibt immer einen String zurück! Wenn du eine Zahl (Integer) davon kriegen willst, machst du z.B.:
+```
+
+Wichtig: `input()` gibt immer einen String (Text) zurück (damit kannst du keine Rechnungen machen!). Das Ergebnis kannst du mit `int(...)` in eine Ganzzahl umwandeln:
+
+```python
 zahl = int(input("Gib eine Zahl ein: "))
 ```
+
+> [!TIP]
+> Eine Abkürzung: `name = input("Bitte geben Sie Ihren Namen ein:")`
 
 ## String Interpolation (Variablen in Strings/Text einfügen)
 
@@ -163,6 +230,11 @@ Es gibt 2 Varianten:
 
 ```python
 print("Hallo " + name + ", willkommen!") # das '+' verbindet Strings
+```
+
+oder
+
+```python
 print(f"Hallo {name}, willkommen!") # das 'f' am Anfang muss man hinzufügen, um Variablen mit {} einfügen zu können
 ```
 
@@ -171,10 +243,10 @@ Wenn die Variable eine Zahl ist, muss man sie zuerst in einen String konvertiere
 ```python
 age = 17
 print("Ich bin " + str(age) + " Jahre alt.")
-print(f"Ich bin {age} Jahre alt.") # das 'f' am Anfang muss man hinzufügen, um Variablen mit {} einfügen zu können
+print(f"Ich bin {age} Jahre alt.") # bei der f-String-Variante wandelt Python die Zahl automatisch in Text um
 ```
 
-## Arrays
+## Arrays / Listen
 
 Anstatt nur eine Variable mit einem Wert, kann man ein Array mit einer Liste von Werten definieren:
 
@@ -199,9 +271,9 @@ text_array = list(text)
 Um etwas zum Beispiel 10 mal zu machen:
 
 ```python
-for i in range(10):
-    print(i) # Gibt die Zahlen von 0 bis 9 aus (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-# 'range(10)' würde einen Array mit den Werten 0 bis 9 erstellen ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).
+for i in range(1, 10):
+    print(i) # Gibt die Zahlen von 1 bis 9 aus (1, 2, 3, 4, 5, 6, 7, 8, 9)
+# 'range(1, 10)' würde einen Array mit den Werten 1 bis 9 erstellen ([1, 2, 3, 4, 5, 6, 7, 8, 9]).
 ```
 
 Einträge in einem Array zählen:

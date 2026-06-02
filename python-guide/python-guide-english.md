@@ -1,7 +1,9 @@
 # Python Learning Aid (MACHINE TRANSLATED)
 
-- One line is executed after the other.
-- Comments are written with a `#` at the beginning of the line. (They are ignored by Python)
+## General Information
+
+- Code lines are executed from top to bottom.
+- Everything after `#` is ignored by Python. You can use this to write comments for humans.
 
 ## Data Types
 
@@ -35,6 +37,9 @@ There are different data types in Python:
     ```
 
 ## Converting Variables
+
+> [!NOTE]
+> Everything after a `#` is ignored by Python. It is only a note for humans.
 
 Examples:
 
@@ -120,29 +125,86 @@ else: # If none of the previous conditions apply
 
 ## Loops
 
-There are 2 types of loops: `for` and `while`
+You need loops when Python should do something multiple times.
+There are 2 important types of loops: `for` and `while`.
 
 ### for loop
 
-Used for a specific number of iterations:
+A `for` loop goes through a collection step by step.
+On each loop run, Python takes the next value from the list and stores it temporarily in a variable.
 
 ```python
-fruits = ["Apple", "Banana", "Cherry"]
-for fruit in fruits: # 'fruit' is the temporary variable used for each element in the array 'fruits'
-    print(fruit) # prints each value of the array (Apple, Banana, Cherry)
+fruits = ["Apple", "Banana", "Cherry", "Lemon"]
+for fruit in fruits: # fruit is always the current fruit
+    print(fruit) # prints the current fruit
+```
+
+Python roughly does this:
+
+1. `fruit` is `"Apple"`, then `"Apple"` is printed.
+2. `fruit` is `"Banana"`, then `"Banana"` is printed.
+3. `fruit` is `"Cherry"`, then `"Cherry"` is printed.
+4. `fruit` is `"Lemon"`, then `"Lemon"` is printed.
+
+Output:
+
+```txt
+Apple
+Banana
+Cherry
+Lemon
+```
+
+The name `fruit` can be chosen freely. The important part is that you use the same name again in the indented block.
+
+If you want to do something a specific number of times, you can use `range()`:
+
+```python
+for i in range(1, 10):
+    print("Loop run number " + str(i))
+```
+
+`range(1, 10)` means: Start at 1 and stop before 10.
+So 10 is not included.
+
+Output:
+
+```txt
+Loop run number 1
+Loop run number 2
+Loop run number 3
+Loop run number 4
+Loop run number 5
+Loop run number 6
+Loop run number 7
+Loop run number 8
+Loop run number 9
 ```
 
 ### while loop
 
-Used as long as a condition is true:
+A `while` loop runs as long as a condition is true.
+Python checks the condition again before every loop run.
 
 ```python
 a = 0
 b = 5
 while a < b: # As long as a is less than b
-    print("a is less than b")
-    a = a + 1 # Increases a by 1 so the loop eventually ends, otherwise it would be an infinite loop
+    print(a)
+    a = a + 1 # a gets bigger so the loop eventually ends
 ```
+
+Output:
+
+```txt
+0
+1
+2
+3
+4
+```
+
+When `a` reaches the value `5`, `a < b` is no longer true. Then the loop stops.
 
 To make an infinite loop, you can write `while True:`.
 
@@ -151,11 +213,16 @@ To make an infinite loop, you can write `while True:`.
 ```python
 print("Please enter your name:")
 name = input()
-# DOES THE SAME AS:
-name = input("Please enter your name:")
-# Important: input() always returns a string! If you want to get a number (integer), do e.g.:
+```
+
+Important: `input()` always returns a string (text), so you cannot do calculations with it directly. You can convert the result to a whole number with `int(...)`:
+
+```python
 number = int(input("Enter a number: "))
 ```
+
+> [!TIP]
+> Shortcut: `name = input("Please enter your name:")`
 
 ## String Interpolation (Insert variables into strings/text)
 
@@ -163,6 +230,11 @@ There are 2 variants:
 
 ```python
 print("Hello " + name + ", welcome!") # '+' joins strings
+```
+
+or
+
+```python
 print(f"Hello {name}, welcome!") # You must add 'f' at the beginning to insert variables with {}
 ```
 
@@ -171,10 +243,10 @@ If the variable is a number, you must first convert it to a string:
 ```python
 age = 17
 print("I am " + str(age) + " years old.")
-print(f"I am {age} years old.") # You must add 'f' at the beginning to insert variables with {}
+print(f"I am {age} years old.") # with the f-string variant, Python automatically converts the number to text
 ```
 
-## Arrays
+## Arrays / Lists
 
 Instead of just one variable with one value, you can define an array with a list of values:
 
@@ -199,9 +271,9 @@ text_array = list(text)
 To do something, for example, 10 times:
 
 ```python
-for i in range(10):
-    print(i) # Prints the numbers from 0 to 9 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-# 'range(10)' would create an array with the values 0 to 9 ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).
+for i in range(1, 10):
+    print(i) # Prints the numbers from 1 to 9 (1, 2, 3, 4, 5, 6, 7, 8, 9)
+# 'range(1, 10)' would create an array with the values 1 to 9 ([1, 2, 3, 4, 5, 6, 7, 8, 9]).
 ```
 
 Count entries in an array:
