@@ -318,6 +318,6 @@ result = sum_numbers(a, b) # a fills the parameter 'number_one' and b fills the 
 print(f"The sum of {a} and {b} is {result}.") # Prints the sum of a and b
 ```
 
-## My example solutions to some of the more difficult tasks
+---
 
-<https://github.com/Alex7k/learn-python/tree/main/python>
+[My example solutions to some of the more difficult tasks](../python)

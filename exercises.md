@@ -4,7 +4,7 @@ This file contains Python scripting ideas.
 
 If you are stuck, there is usually a finished example in the `python/` folder to look at.
 
-Use the [python guide](https://github.com/Alex7k/learn-python/tree/main/python-guide) to learn about concepts used in these exercises
+Use the [python guide](./python-guide) to learn about concepts used in these exercises
 
 ## Level 1 (Start here)
 

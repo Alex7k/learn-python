@@ -318,6 +318,6 @@ resultat = summe(a, b) # a füllt den Parameter 'zahl_eins' und b füllt den Par
 print(f"Die Summe von {a} und {b} ist {resultat}.") # Gibt die Summe von a und b aus
 ```
 
-## Meine Beispiellösungen zu manchen der schwierigen Aufgaben
+---
 
-<https://github.com/Alex7k/learn-python/tree/main/python>
+[Meine Beispiellösungen zu manchen der schwierigen Aufgaben](../python)

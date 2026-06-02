@@ -318,6 +318,6 @@ result = sum_numbers(a, b) # a подставляется в 'number_one', b —
 print(f"The sum of {a} and {b} is {result}.") # Печатает сумму a и b
 ```
 
-## Мои примеры решений для некоторых более сложных задач
+---
 
-<https://github.com/Alex7k/learn-python/tree/main/python>
+[Мои примеры решений для некоторых более сложных задач](../python)

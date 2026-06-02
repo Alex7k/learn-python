@@ -2,7 +2,7 @@
 
 Learn Python using my written guides and scripting exercises.
 
-I recommend reading [the guide](https://github.com/Alex7k/learn-python/tree/main/python-guide) (available in english, german and russian) and applying learned concepts using using my [exercises](./exercises.md).
+I recommend reading [the guide](./python-guide) (available in english, german and russian) and applying learned concepts using using my [exercises](./exercises.md).
 
 ## Contributing
 
