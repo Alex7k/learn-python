@@ -264,4 +264,4 @@ print(f"Die Summe von {a} und {b} ist {resultat}.") # Gibt die Summe von a und b
 
 ## Meine Beispiellösungen zu manchen der schwierigen Aufgaben
 
-[https://github.com/Alex7k/simple-python-scripts/tree/main/python](https://github.com/Alex7k/simple-python-scripts/tree/main/python)
+<https://github.com/Alex7k/learn-python/tree/main/python>

@@ -207,4 +207,4 @@ for i in range(len(word)): # "for i in range(x)" macht, dass die for Schleife so
 
 
 # Meine Beispiellösungen zu manchen der schwierigen Aufgaben:
-# https://github.com/Alex7k/simple-python-scripts/tree/main/python
+# https://github.com/Alex7k/learn-python/tree/main/python

@@ -264,4 +264,4 @@ print(f"The sum of {a} and {b} is {result}.") # Печатает сумму a и
 
 ## Мои примеры решений для некоторых более сложных задач
 
-[https://github.com/Alex7k/simple-python-scripts/tree/main/python](https://github.com/Alex7k/simple-python-scripts/tree/main/python)
+<https://github.com/Alex7k/learn-python/tree/main/python>
