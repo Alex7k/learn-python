@@ -1,9 +1,9 @@
-# Python Guide
+# Learn Python! <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png" alt="Python logo" height="30"> Alex7k's Guide
 
-This repository aims to guide you in learning the Python programming language!
+Learn Python using my written guides and scripting exercises.
 
-I created this repository as a tool to better teach python.
+I recommend reading [the guide](https://github.com/Alex7k/learn-python/tree/main/python-guide) (available in english, german and russian) and applying learned concepts using using my [exercises](./exercises.md).
 
-See [the guide](https://github.com/Alex7k/learn-python/tree/main/python-guide)
+## Contributing
 
-If you have any script ideas that are good for building intuition with python, please [message me](https://alex7k.com/) or edit [the script ideas list](./ideas.md) in a PR.
+Contributions to this repository are welcome. Open a PR or contact me at <https://alex7k.com>.
