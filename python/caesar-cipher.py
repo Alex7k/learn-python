@@ -1,25 +1,20 @@
-# Caesar cipher
+# Caesar Cipher
 
-## - Parameters -
+ALPHABET = list("abcdefghijklmnopqrstuvwxyz")
 
-word = "Hello, world!".lower()
-shift = 6
+text = input("Enter some alphabetical text: ").lower()
+key = int(input("Enter an offset key: "))
 
-## --
 
-alphabet = list("abcdefghijklmnopqrstuvwxyz")
+def cipher(letter, shift):
+  for i in range(len(ALPHABET)):
+    if letter == ALPHABET[i]:
+      return ALPHABET[(i + shift) % len(ALPHABET)]
+  return letter  # letter not in alphabet, leave unchanged
 
-letters = list((word).lower())
 
-def cipher(letter,shift):
-  for i in range(len(alphabet)):
-    if letter == alphabet[i]:
-      return alphabet[(i+shift) % len(alphabet)]
-  return letter # letter not in alphabet, leave unchanged
-  exit()
+shifted_text = ""
+for letter in text:
+  shifted_text += cipher(letter, key)
 
-newWord = ""
-for letter in letters:
-  newWord += cipher(letter,shift)
-
-print(f"'{word}' caesar shifted by {shift} turns to '{newWord}'")
+print(f"'{text}' caesar-cipher-shifted by {key} turns to '{shifted_text}'")
