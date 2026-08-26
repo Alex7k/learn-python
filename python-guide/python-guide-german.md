@@ -117,7 +117,7 @@ Ein Block sind die eingerückten Zeilen unter einer Bedingung. Man muss also Tab
 ```python
 if a < b: # Wenn a kleiner als b ist
     print("a ist kleiner als b")
-elif a == b: # Wenn a gleich b ist
+elif a == b: # Sonst, wenn a gleich b ist
     print("a ist gleich b")
 else: # Wenn keine der vorherigen Bedingungen zutrifft
     print("a ist grösser als b")
