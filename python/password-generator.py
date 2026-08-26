@@ -5,6 +5,6 @@ symbols = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=
 
 password = ""
 for i in range(length):
-  password += random.choice(symbols) # random.choice() selects random object from the array
+  password += random.choice(symbols)  # random.choice() selects random object from the array
 
 print("Password: " + password)
