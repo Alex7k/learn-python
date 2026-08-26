@@ -4,8 +4,8 @@ import random
 import sys
 
 ### VARIABLES
-ROWS = 2
-COLS = 2
+ROWS = 10
+COLS = 10
 BOMB_DENSITY = 0.1
 bombs = int(ROWS * COLS * BOMB_DENSITY)
 # bombs = int(math.sqrt(ROWS*COLS))
