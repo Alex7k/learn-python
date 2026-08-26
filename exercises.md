@@ -97,6 +97,8 @@ Use the [python guide](./python-guide) to learn about concepts used in these exe
 
 - [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
+- Minesweeper
+
 - Sudoku Game
 
 - Maze Generator and Solver
